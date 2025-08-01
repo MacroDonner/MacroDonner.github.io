@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html<html>
+  <meta charset="UTF-8">
+  <title><%=title%></title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome,<%= username%>!</h1>
+    <p>This is my personal portfolio.</p>
+    
+  <form action="/" method="GET">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <button type="submit" class="btn">Enter</button>
+  </form>
+
+    <div class="nav-buttons">                     
+      <a href="/about" class="btn">About Me</a>
+      <a href="/projects" class="btn">Projects</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Projects</h1>
+    <% projects.forEach(project => { %>
+  <div class="project-card">
+    <h2><%= project.title %></h2>
+    <p><%= project.description %></p>
+    <a class="btn" href="<%= project.link %>" target="_blank">View on GitHub</a>
+  </div>
+    <% }) %>
+    <a href="/" class="btn">← Back Home</a>
+  </div>
+</body>
+</html>
+
